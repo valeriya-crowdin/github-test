@@ -1,1 +1,1 @@
-# GitHub тест
+# github-test
