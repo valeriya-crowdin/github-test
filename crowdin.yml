@@ -1,3 +1,3 @@
 files:
   - source: /*.md
-    tration: /lera/%file_name%-%locale%.%file_extension%
+    translation: /lera/%file_name%-%locale%.%file_extension%
