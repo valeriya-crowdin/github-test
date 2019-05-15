@@ -194,7 +194,7 @@ If there are no updates after about 15 minutes and you have clicked the Refresh 
 
 Following is the list of ports for machines in a CircleCI 2.16 installation:
 
-| **Machine type**     | **Port number** | **Protocol** | **Direction** | **Source / destination** | **Use**               | **Notes**                                |
+| **Machine type**     | **Port number** | **Protocol** | **Direction** | **Source / destination** | **使用**                | **Notes**                                |
 | -------------------- | --------------- | ------------ | ------------- | ------------------------ | --------------------- | ---------------------------------------- |
 | **Services Machine** | 80              | TCP          | Inbound       | End users                | HTTP web app traffic  |                                          |
 |                      | 443             | TCP          | Inbound       | End users                | HTTPS web app traffic |                                          |
@@ -206,7 +206,7 @@ Following is the list of ports for machines in a CircleCI 2.16 installation:
 |                      | 8125            | UDP          | Inbound       | Nomad Servers            | Metrics               | Only if using externalised Nomad Servers |
 |                      | 8125            | UDP          | Inbound       | All Database Servers     | Metrics               | Only if using externalised databases     | {: class="table table-striped"} 
 
-| **Machine type**     | **Port number** | **Protocol** | **Direction**  | **Source / destination**                           | **Use**                        | **Notes**                                                                                         |
+| **Machine type**     | **Port number** | **Protocol** | **Direction**  | **Source / destination**                           | **使用**                         | **Notes**                                                                                         |
 | -------------------- | --------------- | ------------ | -------------- | -------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------- |
 | **Services Machine** | 4647            | TCP          | Bi-directional | Nomad Clients                                      | Internal communication         |                                                                                                   |
 |                      | 8585            | TCP          | Bi-directional | Nomad Clients                                      | Internal communication         |                                                                                                   |
@@ -218,7 +218,7 @@ Following is the list of ports for machines in a CircleCI 2.16 installation:
 |                      | 443             | TCP          | Outbound       | AWS API endpoints                                  | API access                     | Only if running on AWS                                                                            |
 |                      | 5432            | TCP          | Outbound       | PostgreSQL Servers                                 | PostgreSQL database connection | Only if using externalised databases. Port is user-defined, assuming the default PostgreSQL port. | {: class="table table-striped"} 
 
-| **Machine type**     | **Port number** | **Protocol** | **Direction** | **Source / destination** | **Use**                     | **Notes**                                                                                      |
+| **Machine type**     | **Port number** | **Protocol** | **Direction** | **Source / destination** | **使用**                      | **Notes**                                                                                      |
 | -------------------- | --------------- | ------------ | ------------- | ------------------------ | --------------------------- | ---------------------------------------------------------------------------------------------- |
 | **Services Machine** | 27017           | TCP          | Outbound      | MongoDB Servers          | MongoDB database connection | Only if using externalised databases. Port is user-defined, assuming the default MongoDB port. |
 |                      | 5672            | TCP          | Outbound      | RabbitMQ Servers         | RabbitMQ connection         | Only if using externalised RabbitMQ                                                            |
@@ -226,7 +226,7 @@ Following is the list of ports for machines in a CircleCI 2.16 installation:
 |                      | 4647            | TCP          | Outbound      | Nomad Servers            | Nomad Server connection     | Only if using externalised Nomad Servers                                                       |
 |                      | 443             | TCP          | Outbound      | CloudWatch Endpoints     | Metrics                     | Only if using AWS CloudWatch                                                                   | {: class="table table-striped"} 
 
-| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination**                           | **Use**                    | **Notes**                                                                                                 |
+| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination**                           | **使用**                     | **Notes**                                                                                                 |
 | ----------------- | --------------- | ------------ | -------------- | -------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------- |
 | **Nomad Clients** | 64535-65535     | TCP          | Inbound        | End users                                          | SSH into builds feature    |                                                                                                           |
 |                   | 80              | TCP          | Inbound        | Administrators                                     | CircleCI Admin API access  |                                                                                                           |
@@ -240,7 +240,7 @@ Following is the list of ports for machines in a CircleCI 2.16 installation:
 |                   | 443             | TCP          | Outbound       | Cloud Storage Provider                             | Artifacts storage          | Only if using external artifacts storage                                                                  |
 |                   | 53              | UDP          | Outbound       | Internal DNS Server                                | DNS resolution             | This is to make sure that your jobs can resolve all DNS names that are needed for their correct operation | {: class="table table-striped"} 
 
-| **Machine type**                                       | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**               | **Notes** |
+| **Machine type**                                       | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**                | **Notes** |
 | ------------------------------------------------------ | --------------- | ------------ | -------------- | ------------------------ | --------------------- | --------- |
 | **GitHub Enterprise / GitHub.com (whichever applies)** | 22              | TCP          | Inbound        | Services Machine         | Git access            |           |
 |                                                        | 22              | TCP          | Inbound        | Nomad Clients            | Git access            |           |
@@ -249,25 +249,25 @@ Following is the list of ports for machines in a CircleCI 2.16 installation:
 |                                                        | 80              | TCP          | Bi-directional | Services Machine         | Webhooks / API access |           |
 |                                                        | 443             | TCP          | Bi-directional | Services Machine         | Webhooks / API access |           | {: class="table table-striped"} 
 
-| **Machine type**       | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**                | **Notes**                                                                                         |
+| **Machine type**       | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**                 | **Notes**                                                                                         |
 | ---------------------- | --------------- | ------------ | -------------- | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------- |
 | **PostgreSQL Servers** | 5432            | TCP          | Bi-directional | PostgreSQL Servers       | PostgreSQL replication | Only if using externalised databases. Port is user-defined, assuming the default PostgreSQL port. | {: class="table table-striped"} 
 
-| **Machine type**    | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**             | **Notes**                                                                                      |
+| **Machine type**    | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**              | **Notes**                                                                                      |
 | ------------------- | --------------- | ------------ | -------------- | ------------------------ | ------------------- | ---------------------------------------------------------------------------------------------- |
 | **MongoDB Servers** | 27017           | TCP          | Bi-directional | MongoDB Servers          | MongoDB replication | Only if using externalised databases. Port is user-defined, assuming the default MongoDB port. | {: class="table table-striped"} 
 
-| **Machine type**     | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**             | **Notes**                           |
+| **Machine type**     | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**              | **Notes**                           |
 | -------------------- | --------------- | ------------ | -------------- | ------------------------ | ------------------- | ----------------------------------- |
 | **RabbitMQ Servers** | 5672            | TCP          | Inbound        | Services Machine         | RabbitMQ connection | Only if using externalised RabbitMQ |
 |                      | 5672            | TCP          | Bi-directional | RabbitMQ Servers         | RabbitMQ mirroring  | Only if using externalised RabbitMQ | {: class="table table-striped"} 
 
-| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**           | **Notes**                                                               |
+| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**            | **Notes**                                                               |
 | ----------------- | --------------- | ------------ | -------------- | ------------------------ | ----------------- | ----------------------------------------------------------------------- |
 | **Redis Servers** | 6379            | TCP          | Inbound        | Services Machine         | Redis connection  | Only if using externalised Redis                                        |
 |                   | 6379            | TCP          | Bi-directional | Redis Servers            | Redis replication | Only if using externalised Redis and using Redis replication (optional) | {: class="table table-striped"} 
 
-| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **Use**                              | **Notes**                                |
+| **Machine type**  | **Port number** | **Protocol** | **Direction**  | **Source / destination** | **使用**                               | **Notes**                                |
 | ----------------- | --------------- | ------------ | -------------- | ------------------------ | ------------------------------------ | ---------------------------------------- |
 | **Nomad Servers** | 4646            | TCP          | Inbound        | Services Machine         | Nomad Server connection              | Only if using externalised Nomad Servers |
 |                   | 4647            | TCP          | Inbound        | Services Machine         | Nomad Server connection              | Only if using externalised Nomad Servers |
