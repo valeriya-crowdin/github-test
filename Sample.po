@@ -21,6 +21,10 @@ msgstr ""
 msgid "Text for translation"
 msgstr ""
 
+#: simple string sample
+msgid "Text for translation neeeew"
+msgstr "translsfjghfdjghf"
+
 #: sample with translated string
 msgid "Text for translation"
 msgstr "Translated string"
