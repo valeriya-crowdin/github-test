@@ -16,14 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Language: fr_FR\n"
 
 #: simple string sample
 msgid "Text for translation"
-msgstr ""
+msgstr "sorce"
 
 #: simple string sample
-msgid "Text for translation neeeew"
-msgstr "translsfjghfdjghf"
+msgid "лолролплп"
+msgstr "4465769879"
 
 #: sample with translated string
 msgid "Text for translation"
