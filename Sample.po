@@ -19,7 +19,7 @@ msgstr ""
 
 #: simple string sample
 msgid "Text for translation"
-msgstr ""
+msgstr "sorce"
 
 #: simple string sample
 msgid "Text for translation neeeew"
