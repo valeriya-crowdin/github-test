@@ -1,4 +1,4 @@
 files:
-  - source: /*.md
+  - source: /*.*
     translation: /lera/%file_name%-%locale%.%file_extension%
-    content_segmentation: 1
+    content_segmentation: 0
