@@ -24,6 +24,10 @@ msgstr "Texte à traduire"
 msgid "Text for translation"
 msgstr "Texte à traduire"
 
+#: sample with translated string
+msgid "fdjhfjdg for translation"
+msgstr "Textfdgffhe à traduire"
+
 #: long string without new line
 msgid "Very long string for translationeven longer string for translation."
 msgstr "Chaîne très longue pour la plus longue chaîne de translationeven pour la traduction."
