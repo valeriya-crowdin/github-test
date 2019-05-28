@@ -1,10 +1,9 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: wwwwwww\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-09-03 10:09+0200\n"
-"PO-Revision-Date: 2019-05-23 03:17\n"
+"PO-Revision-Date: 2019-05-28 09:20\n"
 "Last-Translator: valeriya_crowdin.com\n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -28,10 +27,6 @@ msgstr ""
 #: sample with translated string
 msgid "Text for translation"
 msgstr "Texte à traduire"
-
-#: sample with translated string
-msgid "fdjhfjdg for translation"
-msgstr "Textfdgffhe à traduire"
 
 #: long string without new line
 msgid "Very long string for translationeven longer string for translation."
