@@ -1,3 +1,4 @@
 files:
   - source: /*.json
     translation: /lera/%file_name%-%locale%.%file_extension%
+    "update_option" : "update_without_changes"
